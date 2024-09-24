@@ -16,7 +16,7 @@ class InOrbitCtrlNode:
 
     def get_input(self):
         while not rospy.is_shutdown():
-            self.msg.data = input("Enter control signal (format: sig1=val1|sig2=val2...): ")
+            self.msg.data = input("Enter control signal (format: sig1:val1|sig2:val2...): ")
 
     def run(self):
         while not rospy.is_shutdown():
